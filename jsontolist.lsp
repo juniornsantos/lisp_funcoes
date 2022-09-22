@@ -1,0 +1,5 @@
+(defun json->lst ( jsn ) 
+  (if (eq 'STR (type jsn))
+    (read (vl-string-translate "[]{}:," "()()  " jsn))
+  )
+)
