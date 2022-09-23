@@ -3,7 +3,7 @@ Esta é uma biblioteca de funções lisp/Autolisp/Common Lisp em de código aber
 que você pode executar em qualquer lugar.
 
 ## Json -> List
-Esse comando funciona semelhante ao JSON.parse no JavaScript
+Esta função funciona semelhante ao JSON.parse no JavaScript
 Está e a função:
 
 ```go
