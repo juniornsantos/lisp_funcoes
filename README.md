@@ -1,4 +1,4 @@
-# Biblioteca de funções Lisp/Autolisp
+# Biblioteca de funções Lisp/Autolisp/Common Lisp
 Esta é uma biblioteca de funções lisp/Autolisp/Common Lisp em de código aberto, Funciona como um serviço 
 que você pode executar em qualquer lugar.
 
@@ -14,7 +14,7 @@ Está e a função:
 )
 ```
 
-### Json (exemplo do google)
+### Json (exemplo google)
 ```sh
 {"menu": {
     "header": "SVG Viewer",
