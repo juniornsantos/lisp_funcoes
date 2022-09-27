@@ -3,7 +3,7 @@ Esta é uma biblioteca de funções lisp/Autolisp/Common Lisp em de código aber
 que você pode executar em qualquer lugar.
 
 ## Remover ultimo item de uma lista
-Esta função funciona semelhante ao popped no JavaScript
+Esta função funciona semelhante ao popped no JavaScript removendo o ultimo item de uma lista.
 Está e a função:
 
 ```go
