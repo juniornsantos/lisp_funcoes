@@ -2,6 +2,27 @@
 Esta é uma biblioteca de funções lisp/Autolisp/Common Lisp em de código aberto, Funciona como um serviço 
 que você pode executar em qualquer lugar.
 
+## Remover ultimo item de uma lista
+Esta função funciona semelhante ao popped no JavaScript
+Está e a função:
+
+```go
+(defun remove->last ( lst )
+  (if (null (cdr lst))
+    '()
+    (cons (car lst) (remove->last (cdr lst)))
+  )
+)
+```
+### Modo de uso e retorno
+
+```sh
+(setq lista (list "junior" "nogueira" "pereiro" "ceara"))
+(remove->last lista)
+...("junior" "nogueira" "pereiro")
+```
+
+
 ## Json -> List
 Esta função funciona semelhante ao JSON.parse no JavaScript
 Está e a função:
