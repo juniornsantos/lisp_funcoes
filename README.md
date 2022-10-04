@@ -2,6 +2,7 @@
 Esta é uma biblioteca de funções lisp/Autolisp/Common Lisp em de código aberto, Funciona como um serviço 
 que você pode executar em qualquer lugar.
 
+
 ## Remover ultimo item de uma lista
 Esta função funciona semelhante ao popped no JavaScript removendo o ultimo item de uma lista.
 Está e a função:
@@ -20,6 +21,28 @@ Está e a função:
 (setq lista (list "junior" "nogueira" "pereiro" "ceara"))
 (remove->last lista)
 ...("junior" "nogueira" "pereiro")
+```
+
+## Substituir texto em uma string
+Esta função substituir determinado caracter ou palavra em uma string.
+Está e a função:
+
+```go
+(defun replatxt ( oldText newText text / i )
+  (if (/= oldText newText)
+    (while (setq i (vl-string-search oldText text))
+      (setq text  (vl-string-subst newText oldText text i ))
+    )
+  )
+  text
+)
+```
+### Modo de uso e retorno
+
+```sh
+(setq string "junior nogueira dos pereiro")
+(replatxt "pereiro" "santos" string)
+..."junior nogueira dos santos"
 ```
 
 
